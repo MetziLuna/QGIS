@@ -8,5 +8,7 @@ IF ("internet_respuesta_SI" = 'NA',0,"internet_respuesta_SI")
 to_int("internet_respuesta_SI") + to_int("internet_respuesta_NO") + "urbano_na" + "urbano_nr" 
 to_int( "municipios_internet_rural_internet_respuesta_SI" ) + to_int( "municipios_internet_rural_internet_respuesta_NO" ) + "rural_na" + "rural_nr" 
 
+if( "municipios_internet_rural_internet_respuesta_SI" IS NULL, 0, "municipios_internet_rural_internet_respuesta_SI")
+
 ((to_int("internet_respuesta_SI" )+ to_int( "municipios_internet_rural_internet_respuesta_SI" ))/ "total" )*100
 ( to_int( "municipios_internet_rural_internet_respuesta_SI" )/ "total_rural" )*100
