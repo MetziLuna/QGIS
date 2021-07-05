@@ -1,2 +1,5 @@
 #Si la cantidad de población indicada para la respuesta 'No aplica' (NA), se coloca como población la cantidad de 0.
 if( "internet_respuesta_NA" = 'NA', 0,"internet_respuesta_NA") 
+
+#Se suman las respuestas de todas las posibilidades para conocer el total urbano
+to_int("internet_respuesta_SI") + to_int("internet_respuesta_NO") + "urbano_na" + "urbano_nr" 
