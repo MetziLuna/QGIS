@@ -1,0 +1,2 @@
+#Si la cantidad de población indicada para la respuesta 'No aplica' (NA), se coloca como población la cantidad de 0.
+if( "internet_respuesta_NA" = 'NA', 0,"internet_respuesta_NA") 
